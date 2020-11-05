@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/static/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+<h1>Flask Chat Bot Example</h1>
+<button class="open-button" onclick="openForm()">Chat</button>
+<div id="myForm" style="
+    border: black;
+    border-style: solid;
+    border-width: medium;
+    width: 30%;
+    float: center;
+    margin: 0 auto;
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    border-radius: 10px;
+    height: 75%;
+    overflow: scroll;
+    scroll-behavior: auto;
+">
+<div id="chatbox">
+<p class="botText"><span>Hi! I'm a Chat Bot.</span></p>
+</div>
+
+<div id="userInput">
+<input id="textInput" type="text" name="msg" placeholder="Message">
+<input id="buttonInput" class="btn" type="submit" value="Send">
+<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+</div>
+
+
+<script>
+function getBotResponse() {
+var rawText = $("#textInput").val();
+var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+$("#textInput").val("");
+$("#chatbox").append(userHtml);
+document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+$.get("/get", { msg: rawText }).done(function(data) {
+var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+$("#chatbox").append(botHtml);
+document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+});
+}
+$("#textInput").keypress(function(e) {
+if(e.which == 13) {
+getBotResponse();
+}
+});
+$("#buttonInput").click(function() {
+getBotResponse();
+})
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+
+</script>
+</div>
+</body>
+</html>
+
