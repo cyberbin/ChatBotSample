@@ -51,7 +51,7 @@ def chat():
             if tag == intent["tag"]:
                 return random.choice(intent['responses'])
     else:
-        return "I do not understand..."
+        return "I do not understand... <br/> <br/> In case of any queries please contact sathiskumar.a.palanisamy@partners.basf.com"
 
 
 if __name__ == "__main__":

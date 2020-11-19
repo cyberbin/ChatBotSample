@@ -71,7 +71,7 @@ text-align: left;
 line-height: 30px;
 }
 .botText span {
-background-color: #EF5350;
+background-color: #509eef;
 padding: 10px;
 border-radius: 2px;
 }
@@ -101,7 +101,7 @@ width: 300px;
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
+  background: #555;
 }
 
 input[type=text] {

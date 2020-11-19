@@ -8,7 +8,8 @@
         "How are you",
         "Is anyone there?",
         "Hello",
-        "Good day"
+        "Good day",
+        "Whats up"
       ],
       "responses": [
         "Hey :-)",
@@ -32,73 +33,74 @@
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
     {
-      "tag": "items",
-      "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
-      ],
+      "tag": "What is DDC",
+      "patterns": ["What is Full form of DDC", "What is Digital demand center", "What is DDC","Fullform of DDC"],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
-      ]
-    },
-    {
-      "tag": "payments",
-      "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
-      ],
+        "The Digital Demand Center is a solution to enables our business partners to search, log and track digital demands for automation, simplification and modernization."]
+    },  {
+      "tag": "What kind of tickets matter",
+      "patterns": ["Is DDC a replacement for the Helpdesk", "How diffrent is this from AccessIT", "Is it similar to Mylink"],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
-      ]
-    },
-    {
-      "tag": "delivery",
-      "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
-      ],
+        "The DDC is NOT a replacement for the Helpdesk, AccessIT or MyLink.",
+        "Infrastructure, Purchases, General desktop assistance cannot be made on Digital Demade Center (DDC)."]
+  },
+	{
+      "tag": "Who is DDC",
+      "patterns": ["Who is Digital Demand Team", "Who is DDC", "Where is DDT available"],
+      "responses": ["The Digital Demand Team is a group of individuals representing the Solution Spaces in our portfolio of automation tools and technologies"]
+  },
+	{
+      "tag": "Who is this for",
+      "patterns": ["Who is this platform for ?", "Who is this for ?"],
       "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
-      ]
-    },
-    {
-      "tag": "funny",
-      "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
-      ],
+        "Everyone at BASF in North America may use the DDC. This portal was developed with the mindset that digital solutions can be built or reused within all the businesses, services, sites and processes."]
+  },
+	{
+      "tag": "What happens after I submit",
+      "patterns": ["What happens after I submit Request?", "Next Process"],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
-      ]
-    },
-        {
-      "tag": "Accommodation",
-      "patterns": [
-        "Can you help me find accommodation?",
-        "Will I get a Room?"
-      ],
+        "The demand is then mapped to a Solution Space. The Solution Lead will then assign the Solution Analyst who will engage with the requestor for process review, requirement gathering and effort estimation (time and cost). Once approved, the request is turned over to our DevOps team for delivery."]
+  },	{
+    "tag": "What is Demand Tracker",
+    "patterns": ["What is Demand Tracker ?"],
+    "responses": ["The Demand Tracker lets you easily follow your request from initiation to closure. At any time during the process, you can visit your request to see the current status and follow its history"]
+  },  {
+    "tag": "What solutions are available",
+    "patterns": ["What solutions are available ?","Digital Demand Solution Spaces"],
+    "responses": [
+    "Progressive Web App (PWA), Robotic Process Automation (RPA), Power Apps, Power BI, Power Automate, Cloud Enablement"]
+  },  {
+      "tag": "What is PWA",
+      "patterns": ["What is PWA","What is Progressive web apps"],
+      "responses": ["PWA is a platform agnostic application which is built using simple web technologies and delivered over the internet or intranet. Despite being a web-based technology, it can also work on various screen sizes like desktop, tablet and mobile phones and can easily make use of responsive design technology from websites."]
+  },  {
+      "tag": "What is RPA",
+      "patterns": ["What is RPA","What is Robotic Process Automation"],
       "responses": [
-        "Please discuss this matter during the interview with the HR department."
-      ]
-    },
-        {
-      "tag": "Company location",
-      "patterns": [
-        "How to get to the Berlin Site?",
-        "Where is Company Located?"
-      ],
-      "responses": [
-        "You find all relevant directions to your interview at the largest Company production site in Berlin within the following pdf document."
-      ]
-    }
+      "Robotic Process Automation (RPA) is a technology based on the use of software robots that can be integrated in existing IT infrastructure and delivers repetitive, deterministic, high-volume tasks efficiently, quickly, and consistently."]
+  },  {
+    "tag": "What is Power Apps",
+    "patterns": ["What is Power Apps","What is PowerApps"],
+    "responses": [
+      "A suite of apps, services, connectors and data platform that provides a rapid application development environment to build custom apps for your business needs.Using Power Apps you can quickly build custom business apps that connect to your data stored in various online and on-premises data sources ."]
+  }, {
+    "tag": "What is Power BI",
+    "patterns": ["What is Power BI","What is PowerBI"],
+    "responses": [
+      "This platform is a collection of software services, apps,and connectors that work together to turn your unrelated sources of data into coherent visually immersive and interactive insights. Whether your data is a simple Excel spreadsheet or a collection of data from different data sources, Power BI lets you easily connect to your data sources visualize (or discover) what's important and share that with anyone you want."]
+  }, {
+    "tag": "What is Power Automate",
+    "patterns": ["What is Power Automate","What is PowerAutomate"],
+    "responses": [
+      "Service that helps you to create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data and more.The following list summarizes the different types of flows"]
+  }, {
+    "tag": "What is Cloud Enablement",
+    "patterns": ["What is Cloud Enablement","What is CloudEnablement"],
+    "responses": [
+      "Cloud Enablement: Migration of applications to the cloud. Often by upgrading / replacing the applicaiton technology. Includes database migration."]
+  }
+
+  
+    
   ]
 }
